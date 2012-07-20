@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "miniprofiler"
-  s.version = "0.1.7.3"
+  s.version = "0.1.7.4"
   s.summary = "Profiles loading speed for rack applications."
   s.authors = ["Aleks Totic","Sam Saffron", "Robin Ward"]
   s.description = "Page loading speed displayed on every page. Optimize while you develop, performance is a feature."
