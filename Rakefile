@@ -2,6 +2,7 @@
 require 'rubygems'
 require 'bundler'
 Bundler.setup(:default, :test)
+require "bundler/gem_tasks"
 
 task :default => [:spec]
 
@@ -17,7 +18,7 @@ task :build => :compile_less do
 end
 
 desc "compile less"
-task :compile_less => :copy_files do 
+task :compile_less => :copy_files do
   `lessc lib/html/includes.less > lib/html/includes.css`
 end
 

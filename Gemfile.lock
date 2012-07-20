@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rack-mini-profiler (0.1.7)
+    miniprofiler (0.1.7.1)
       rack (>= 1.1.3)
 
 GEM
@@ -55,8 +55,8 @@ DEPENDENCIES
   activerecord (~> 3.0)
   autotest
   less
+  miniprofiler!
   rack
-  rack-mini-profiler!
   rack-test
   rake
   redis
