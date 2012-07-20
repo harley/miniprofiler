@@ -1,0 +1,4 @@
+lib/html
+pkg/
+tmp/
+*.gem
