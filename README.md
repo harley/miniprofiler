@@ -1,12 +1,10 @@
 # NOTE FOR THIS GEM FORK
 
-This is a fork the Ruby folder of https://github.com/SamSaffron/MiniProfiler which includes some quick fixes to make the original rack-mini-profiler gem a little more usable. I will consolidate any useful changes here into pull requests for the original repo.
+This is a fork the Ruby folder of https://github.com/SamSaffron/MiniProfiler which includes some quick fixes to make the original rack-mini-profiler gem a little more usable. I will  keep in in sync with Ruby related development from the original repo and consolidate any useful changes here into pull requests for the original repo
 
-* Add `gem 'miniprofiler'` to your Gemfile (install of 'rack-mini-profiler')
+* Add `gem 'miniprofiler', require: 'rack-mini-profiler'` to your Gemfile (install of `gem 'rack-mini-profiler'`)
 * `miniprofiler`'s version uses `x.y.z.t` syntax in order to more easily sync with `rack-mini-profiler`'s `x.y.z` SemVer versioning. I will increase `t` whenever I make a patch
-* This gem fork will work in staging, not just development and production
-* Gem release date will be correct (as of now 'rack-mini-profiler' hardcodes the release date to be 04/02/2012, which is very confusing: https://rubygems.org/gems/rack-mini-profiler -- I will report to them)
-* Allow turning off loading jquery if the app already uses jquery
+* Note to use MiniProfiler outside development and production env in Rails, set `Rack::MiniProfiler.config.pre_authorize_cb = lambda {|env| true }` in an initializer file in Rails. I recommend wrapping all Rack::MiniProfiler calls under your env check. E.g. `if %w(development staging).include?(Rails.env)`
 * More to come
 
 # Original README below:
