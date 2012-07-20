@@ -36,5 +36,6 @@ task :copy_files do
   `cp -f #{path}/list.js lib/html/list.js`
   `cp -f #{path}/list.tmpl lib/html/list.tmpl`
   `cp -f #{path}/include.partial.html lib/html/profile_handler.js`
+  `cp -f #{path}/share.html lib/html/share.html`
 end
 
