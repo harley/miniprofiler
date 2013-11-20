@@ -1,3 +1,7 @@
+# UPDATE
+
+This repo is no longer maintained. Check out the latest at https://github.com/MiniProfiler/rack-mini-profiler for the original rack-mini-profiler gem instead.
+
 # NOTE FOR THIS GEM FORK
 
 This is a fork the Ruby folder of https://github.com/SamSaffron/MiniProfiler which includes some quick fixes to make the original rack-mini-profiler gem a little more usable. I will  keep in in sync with Ruby related development from the original repo and consolidate any useful changes here into pull requests for the original repo
